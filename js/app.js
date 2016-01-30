@@ -3,6 +3,11 @@ var ViewModel = function(){
 	this.name = ko.observable("Snow White");
 	this.imgSrc= ko.observable("images/cat.jpg");
 	this.imgAttribution = ko.observable("https://flickr.com/user43");
+	this.nicknames=[
+		{nickname: "Snowy"},
+		{nickname: "Whitey"},
+		{nickname: "Catty"}
+	];
 	this.label = ko.computed(function(){
 		var label;
 		if(this.clickCount() < 10){

@@ -9,6 +9,9 @@
 		<h4 data-bind="text: label"></h4>
 		<div data-bind="text: clickCount"></div>
 		<img src="" data-bind="click: incrementCounter, attr:{src: imgSrc}" alt="cute cat">
+		<ul data-bind="foreach: nicknames">
+			<li data-bind="text: nickname"></li>
+		</ul>
 	</div>
 
 	<script type="text/javascript" src="js/knockout.js"></script>
